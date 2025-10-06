@@ -39,9 +39,9 @@ int main(int argc, char **argv) {
 
   //@@ Initialize the grid and block dimensions here
   dim3 DimGrid(inputLength/256, 1, 1);
-  if( inputLength % 256 != 0) DimGrid.x ++;
+  if( inputLength % 512 != 0) DimGrid.x ++;
 
-  dim3 DimBlock(256, 1, 1);
+  dim3 DimBlock(512, 1, 1);
 
 
   //@@ Launch the GPU Kernel here to perform CUDA computation
