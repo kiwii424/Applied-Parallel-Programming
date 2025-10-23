@@ -1,0 +1,13 @@
+*.i
+*.ii
+*.gpu
+*.ptx
+*.cubin
+*.fatbin
+libwb/
+/m1_cpu
+/m1_gpu
+/m2_unroll
+/m2_fused
+/m3
+/final

@@ -20,10 +20,7 @@ In this Project, you and your team will implement the entire forward pass of GPT
 | Milestone 2 | Week 10-11                  |
 | Milestone 3 | Week 15-16                  |
 
-**Note**: The Grace Period Policy for assignment submissions does **NOT** apply to the GPT Final Project due to it being a team project. All deadlines in this project are final! *However, we do understand that sometimes life happens, so we provide each team with a late voucher. Please see the "Late Voucher" section below for more details.*
-
-### Late Voucher
-Every team is given 1 late voucher for this project (not applicable to labs). This voucher can be used to extend the deadline of a milestone submission by **3 days** without any penalty. If your team chooses to use the voucher, you will need to inform your assigned course staff no later than 3 days **after** the milestone deadline. Once used, the late voucher would effectively push back the deadline of the milestone by 3 days for your team only, and your submission at 11:59 PM on the new deadline will be the only submission considered for grading.
+**Note**: The Grace Period Policy for assignment submissions applies to the GPT Final Project as well.
 
 ## Notes on Teamwork
 
