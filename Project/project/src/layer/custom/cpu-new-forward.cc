@@ -34,6 +34,37 @@ void conv_forward_cpu(float *output, const float *input, const float *mask, cons
 
   // Insert your CPU convolution kernel code here
 
+  // 1) Zero-initialize output tensor
+  for (int b = 0; b < Batch; ++b) {
+    for (int m = 0; m < Map_out; ++m) {
+      for (int h = 0; h < Height_out; ++h) {
+        for (int w = 0; w < Width_out; ++w) {
+          out_4d(b, m, h, w) = 0.0f;
+        }
+      }
+    }
+  }
+
+  // 2) Accumulate convolution contributions
+  for (int b = 0; b < Batch; ++b) {
+    for (int m = 0; m < Map_out; ++m) {
+      for (int c = 0; c < Channel; ++c) {           // sum over input feature maps
+        for (int p = 0; p < K; ++p) {               // kernel row
+          for (int q = 0; q < K; ++q) {             // kernel col
+            const float w_mcpq = mask_4d(m, c, p, q);
+            for (int h = 0; h < Height_out; ++h) {  // output row
+              const int ih = h + p;
+              for (int w = 0; w < Width_out; ++w) { // output col
+                const int iw = w + q;
+                out_4d(b, m, h, w) += in_4d(b, c, ih, iw) * w_mcpq;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   #undef out_4d
   #undef in_4d
   #undef mask_4d

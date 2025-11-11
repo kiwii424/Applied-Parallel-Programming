@@ -18,4 +18,5 @@ module load cuda/12.4
 
 echo -e "job $SLURM_JOBID is starting on `hostname`\n\n"
 
-srun ./m1_gpu 100 > m1_gpu.out
+# srun ./m1_gpu 100 > m1_gpu.out
+srun nsys profile --stats=true ./m1_gpu > profile.out

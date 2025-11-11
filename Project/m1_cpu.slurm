@@ -18,7 +18,8 @@ module load cuda/12.4
 
 echo -e "job $SLURM_JOBID is starting on `hostname`\n\n"
 
-srun ./m1_cpu 100 > m1_cpu.out
+# srun ./m1_cpu 100 > m1_cpu.out
+srun ./m1_cpu 1000 && gprof -Q ./m1_cpu gmon.out > outfile
 
 # Generate running time information
 # { time srun ./m1_cpu 100 > m1_cpu.out; } 2> time.out
