@@ -43,9 +43,10 @@ For Milestone 2, you will:
 | **3. Conduct profiling and complete the report**     | Complete a quiz-style report on PrairieLearn using your profiling results        |
 | **4. Submit code for grading** | See [Submitting Milestone 2 for Grading](#4-submitting-milestone-2-for-grading). |
 
-You will edit the following file for milestone 2.
+You will edit the following files for milestone 2.
 ```
 project/src/layer/custom/kernel-fusion-forward.cu
+project/src/layer/custom/unroll-new-forward.cu
 ```
 
 **Only modify the files specifically mentioned in this document. Changes to other files will not be used for grading, and may cause unexpected errors that you will be responsible for.**
