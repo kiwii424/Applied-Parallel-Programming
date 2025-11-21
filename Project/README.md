@@ -34,6 +34,7 @@ So please always do `git pull` to update the project instructions.
 | --------------------------- | ---------------------- | ----- |
 | [Milestone 1](README_m1.md) | October 10th, 2025 8PM | 10%   |
 | [Milestone 2](README_m2.md) | November 7th, 2025 8PM | 35%   |
+| [Milestone 3](README_m3.md) | December 5th, 2025 8PM | 55%   |
 
 
 ## License
