@@ -11,8 +11,3 @@ Also make sure that all modulefiles written in TCL start with the string
 
 
 
-WARNING: Device-side CUDA Event completion trace is currently enabled.
-         This may increase runtime overhead and the likelihood of false
-         dependencies across CUDA Streams. If you wish to avoid this, please
-         disable the feature with --cuda-event-trace=false.
-SKIPPED: /u/mhuang9/ece408git/Project_op2/./project/m3/op_2/nsys_report.sqlite does not contain NV Tools Extension (NVTX) data.
