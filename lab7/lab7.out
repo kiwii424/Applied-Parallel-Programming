@@ -1,0 +1,113 @@
+job 13456410 is starting on gpub048.delta.ncsa.illinois.edu
+
+
+
+run without sanitization checks
+Solution is correct
+Solution is correct
+Solution is correct
+Solution is correct
+Solution is correct
+Solution is correct
+Solution is correct
+Solution is correct
+Solution is correct
+Solution is correct
+
+memcheck tests:
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+
+initcheck tests:
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+
+synccheck tests:
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+Solution is correct
+========= ERROR SUMMARY: 0 errors
+
+all tests completed.

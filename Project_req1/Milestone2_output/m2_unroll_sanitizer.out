@@ -1,0 +1,14 @@
+========= COMPUTE-SANITIZER
+Test batch size: 100
+Loading fashion-mnist data...Done
+Loading model...Done
+Conv-GPU==
+Layer Time: 101.247 ms
+Op Time: 96.9946 ms
+Conv-GPU==
+Layer Time: 163.224 ms
+Op Time: 159.868 ms
+
+Test Accuracy: 0.86
+
+========= ERROR SUMMARY: 0 errors

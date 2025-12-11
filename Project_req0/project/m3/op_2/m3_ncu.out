@@ -1,0 +1,25 @@
+Test batch size: 10000
+Loading fashion-mnist data...Done
+Loading model...Done
+Conv-GPU==
+==PROF== Connected to process 2720357 (/u/mhuang9/ece408git/Project_op2/m3)
+==PROF== Profiling "prefn_marker_kernel()" - 0: 0%....50%....100% - 40 passes
+Task: op_2
+==PROF== Profiling "matmul_conv_fused" - 1: 0%
+==WARNING== Launching the workload is taking more time than expected. If this continues to hang, terminate the profile and re-try by profiling the range of all related launches using '--replay-mode range'. See https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#replay for more details.
+....50%....100% - 40 passes
+==PROF== Profiling "do_not_remove_this_kernel()" - 2: 0%....50%....100% - 40 passes
+Layer Time: 15947.9 ms
+Op Time: 15737.2 ms
+Conv-GPU==
+==PROF== Profiling "prefn_marker_kernel()" - 3: 0%....50%....100% - 40 passes
+Task: op_2
+==PROF== Profiling "matmul_conv_fused" - 4: 0%....50%....100% - 40 passes
+==PROF== Profiling "do_not_remove_this_kernel()" - 5: 0%....50%....100% - 40 passes
+Layer Time: 17803.2 ms
+Op Time: 17664.2 ms
+
+Test Accuracy: 0.8714
+
+==PROF== Disconnected from process 2720357
+==PROF== Report: /u/mhuang9/ece408git/Project_op2/./project/m3/op_2/analysis_file.ncu-rep

@@ -1,0 +1,15 @@
+Test batch size: 100
+Loading fashion-mnist data...Done
+Loading model...Done
+Conv-GPU==
+==PROF== Connected to process 1773111 (/u/mhuang9/ece408git/Project/m1_gpu)
+==ERROR== ERR_NVGPUCTRPERM - The user does not have permission to access NVIDIA GPU Performance Counters on the target device 0. For instructions on enabling permissions and to get more information see https://developer.nvidia.com/ERR_NVGPUCTRPERM
+Layer Time: 4.46706 ms
+Op Time: 0.936829 ms
+Conv-GPU==
+Layer Time: 4.90662 ms
+Op Time: 0.866456 ms
+
+Test Accuracy: 0.86
+
+==PROF== Disconnected from process 1773111

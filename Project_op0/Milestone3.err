@@ -1,0 +1,18 @@
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: /sw/rh9.4/spack/default/modules/lmod/linux-rhel9-x86_64/Core
+Lmod has detected the following error: The following module(s) are unknown:
+"cuda/12.4"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "cuda/12.4"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+SKIPPED: /u/mhuang9/ece408git/Project_op0/./project/m3/op_0/nsys_report.sqlite does not contain NV Tools Extension (NVTX) data.

@@ -1,0 +1,99 @@
+Test batch size: 10000
+Loading fashion-mnist data...Done
+Loading model...Done
+Conv-GPU==
+==PROF== Connected to process 2566822 (/u/mhuang9/ece408git/Project_op4/m3)
+==PROF== Profiling "prefn_marker_kernel()" - 0: 0%....50%....100% - 40 passes
+==PROF== Profiling "unroll_input_kernel_op4" - 1: 0%
+==WARNING== Launching the workload is taking more time than expected. If this continues to hang, terminate the profile and re-try by profiling the range of all related launches using '--replay-mode range'. See https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#replay for more details.
+....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 2: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 3: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 4: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 5: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 6: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 7: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 8: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 9: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 10: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 11: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 12: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 13: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 14: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 15: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 16: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 17: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 18: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 19: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 20: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 21: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 22: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 23: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 24: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 25: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 26: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 27: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 28: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 29: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 30: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 31: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 32: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 33: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 34: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 35: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 36: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 37: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 38: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 39: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 40: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 41: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 42: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 43: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 44: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 45: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 46: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 47: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 48: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 49: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 50: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 51: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 52: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 53: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 54: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 55: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 56: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 57: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 58: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 59: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 60: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 61: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 62: 0%....50%....100% - 40 passes
+==PROF== Profiling "gemmSN_NN_kernel_64addr" - 63: 0%....50%....100% - 40 passes
+==PROF== Profiling "permute_output_kernel_op4" - 64: 0%....50%....100% - 40 passes
+==PROF== Profiling "do_not_remove_this_kernel()" - 65: 0%....50%....100% - 40 passes
+Layer Time: 106957 ms
+Op Time: 106769 ms
+Conv-GPU==
+==PROF== Profiling "prefn_marker_kernel()" - 66: 0%....50%....100% - 40 passes
+==PROF== Profiling "unroll_input_kernel_op4" - 67: 0%....50%....100% - 40 passes
+==PROF== Profiling "Kernel2" - 68: 0%....50%....100% - 40 passes
+==PROF== Profiling "Kernel2" - 69: 0%....50%....100% - 40 passes
+==PROF== Profiling "Kernel2" - 70: 0%....50%....100% - 40 passes
+==PROF== Profiling "Kernel2" - 71: 0%....50%....100% - 40 passes
+==PROF== Profiling "Kernel2" - 72: 0%....50%....100% - 40 passes
+==PROF== Profiling "Kernel2" - 73: 0%....50%....100% - 40 passes
+==PROF== Profiling "Kernel2" - 74: 0%....50%....100% - 40 passes
+==PROF== Profiling "Kernel2" - 75: 0%....50%....100% - 40 passes
+==PROF== Profiling "Kernel2" - 76: 0%....50%....100% - 40 passes
+==PROF== Profiling "Kernel2" - 77: 0%....50%....100% - 40 passes
+==PROF== Profiling "Kernel2" - 78: 0%....50%....100% - 40 passes
+==PROF== Profiling "ampere_sgemm_128x32_nn" - 79: 0%....50%....100% - 40 passes
+==PROF== Profiling "permute_output_kernel_op4" - 80: 0%....50%....100% - 40 passes
+==PROF== Profiling "do_not_remove_this_kernel()" - 81: 0%....50%....100% - 40 passes
+Layer Time: 32497.9 ms
+Op Time: 32361.5 ms
+
+Test Accuracy: 0.8714
+
+==PROF== Disconnected from process 2566822
+==PROF== Report: /u/mhuang9/ece408git/Project_op4/./project/m3/op_4/analysis_file.ncu-rep

@@ -1,0 +1,10 @@
+=====================================
+ Time : 2025-12-05 12:37:33
+ JobID: 13982213
+=====================================
+Test batch size: 10000
+Loading fashion-mnist data...Done
+Loading model...Done
+Conv-GPU==
+Layer Time: 234.884 ms
+Op Time: 39.0116 ms

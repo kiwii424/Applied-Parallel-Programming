@@ -1,0 +1,20 @@
+=====================================
+ Time : 2025-12-10 02:56:14
+ JobID: 14043454
+=====================================
+Test batch size: 10000
+Loading fashion-mnist data...Done
+Loading model...Done
+Conv-GPU==
+Layer Time: 221.048 ms
+Op Time: 34.7259 ms
+Conv-GPU==
+Layer Time: 159.47 ms
+Op Time: 30.1922 ms
+
+Test Accuracy: 0.8714
+
+
+real	1m26.192s
+user	0m0.009s
+sys	0m0.005s
