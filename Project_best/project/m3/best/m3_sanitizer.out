@@ -5,777 +5,9 @@ Loading model...Done
 Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (0,0,0) in block (169,0,0)
-=========     Address 0x7f06cbe00310 is out of bounds
-=========     and is 1 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (1,0,0) in block (169,0,0)
-=========     Address 0x7f06cbe00314 is out of bounds
-=========     and is 5 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (2,0,0) in block (169,0,0)
-=========     Address 0x7f06cbe00318 is out of bounds
-=========     and is 9 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (3,0,0) in block (169,0,0)
-=========     Address 0x7f06cbe0031c is out of bounds
-=========     and is 13 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (4,0,0) in block (169,0,0)
-=========     Address 0x7f06cbe00320 is out of bounds
-=========     and is 17 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (5,0,0) in block (169,0,0)
-=========     Address 0x7f06cbe00324 is out of bounds
-=========     and is 21 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (6,0,0) in block (169,0,0)
-=========     Address 0x7f06cbe00328 is out of bounds
-=========     and is 25 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (7,0,0) in block (169,0,0)
-=========     Address 0x7f06cbe0032c is out of bounds
-=========     and is 29 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (8,0,0) in block (169,0,0)
-=========     Address 0x7f06cbe00330 is out of bounds
-=========     and is 33 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (9,0,0) in block (169,0,0)
-=========     Address 0x7f06cbe00334 is out of bounds
-=========     and is 37 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (10,0,0) in block (169,0,0)
-=========     Address 0x7f06cbe00338 is out of bounds
-=========     and is 41 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (11,0,0) in block (169,0,0)
-=========     Address 0x7f06cbe0033c is out of bounds
-=========     and is 45 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (12,0,0) in block (169,0,0)
-=========     Address 0x7f06cbe00340 is out of bounds
-=========     and is 49 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (13,0,0) in block (169,0,0)
-=========     Address 0x7f06cbe00344 is out of bounds
-=========     and is 53 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (14,0,0) in block (169,0,0)
-=========     Address 0x7f06cbe00348 is out of bounds
-=========     and is 57 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (15,0,0) in block (169,0,0)
-=========     Address 0x7f06cbe0034c is out of bounds
-=========     and is 61 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (0,1,0) in block (169,0,0)
-=========     Address 0x7f06cbe003d4 is out of bounds
-=========     and is 197 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (1,1,0) in block (169,0,0)
-=========     Address 0x7f06cbe003d8 is out of bounds
-=========     and is 201 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (2,1,0) in block (169,0,0)
-=========     Address 0x7f06cbe003dc is out of bounds
-=========     and is 205 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (3,1,0) in block (169,0,0)
-=========     Address 0x7f06cbe003e0 is out of bounds
-=========     and is 209 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (4,1,0) in block (169,0,0)
-=========     Address 0x7f06cbe003e4 is out of bounds
-=========     and is 213 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (5,1,0) in block (169,0,0)
-=========     Address 0x7f06cbe003e8 is out of bounds
-=========     and is 217 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (6,1,0) in block (169,0,0)
-=========     Address 0x7f06cbe003ec is out of bounds
-=========     and is 221 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (7,1,0) in block (169,0,0)
-=========     Address 0x7f06cbe003f0 is out of bounds
-=========     and is 225 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (8,1,0) in block (169,0,0)
-=========     Address 0x7f06cbe003f4 is out of bounds
-=========     and is 229 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (9,1,0) in block (169,0,0)
-=========     Address 0x7f06cbe003f8 is out of bounds
-=========     and is 233 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (10,1,0) in block (169,0,0)
-=========     Address 0x7f06cbe003fc is out of bounds
-=========     and is 237 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (11,1,0) in block (169,0,0)
-=========     Address 0x7f06cbe00400 is out of bounds
-=========     and is 241 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (12,1,0) in block (169,0,0)
-=========     Address 0x7f06cbe00404 is out of bounds
-=========     and is 245 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (13,1,0) in block (169,0,0)
-=========     Address 0x7f06cbe00408 is out of bounds
-=========     and is 249 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (14,1,0) in block (169,0,0)
-=========     Address 0x7f06cbe0040c is out of bounds
-=========     and is 253 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (15,1,0) in block (169,0,0)
-=========     Address 0x7f06cbe00410 is out of bounds
-=========     and is 257 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (0,0,0) in block (1,0,0)
-=========     Address 0x7f06cbe00310 is out of bounds
-=========     and is 1 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (1,0,0) in block (1,0,0)
-=========     Address 0x7f06cbe00314 is out of bounds
-=========     and is 5 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (2,0,0) in block (1,0,0)
-=========     Address 0x7f06cbe00318 is out of bounds
-=========     and is 9 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (3,0,0) in block (1,0,0)
-=========     Address 0x7f06cbe0031c is out of bounds
-=========     and is 13 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (4,0,0) in block (1,0,0)
-=========     Address 0x7f06cbe00320 is out of bounds
-=========     and is 17 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (5,0,0) in block (1,0,0)
-=========     Address 0x7f06cbe00324 is out of bounds
-=========     and is 21 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (6,0,0) in block (1,0,0)
-=========     Address 0x7f06cbe00328 is out of bounds
-=========     and is 25 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (7,0,0) in block (1,0,0)
-=========     Address 0x7f06cbe0032c is out of bounds
-=========     and is 29 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (8,0,0) in block (1,0,0)
-=========     Address 0x7f06cbe00330 is out of bounds
-=========     and is 33 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (9,0,0) in block (1,0,0)
-=========     Address 0x7f06cbe00334 is out of bounds
-=========     and is 37 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (10,0,0) in block (1,0,0)
-=========     Address 0x7f06cbe00338 is out of bounds
-=========     and is 41 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (11,0,0) in block (1,0,0)
-=========     Address 0x7f06cbe0033c is out of bounds
-=========     and is 45 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (12,0,0) in block (1,0,0)
-=========     Address 0x7f06cbe00340 is out of bounds
-=========     and is 49 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (13,0,0) in block (1,0,0)
-=========     Address 0x7f06cbe00344 is out of bounds
-=========     and is 53 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (14,0,0) in block (1,0,0)
-=========     Address 0x7f06cbe00348 is out of bounds
-=========     and is 57 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (15,0,0) in block (1,0,0)
-=========     Address 0x7f06cbe0034c is out of bounds
-=========     and is 61 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (0,1,0) in block (1,0,0)
-=========     Address 0x7f06cbe003d4 is out of bounds
-=========     and is 197 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (1,1,0) in block (1,0,0)
-=========     Address 0x7f06cbe003d8 is out of bounds
-=========     and is 201 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (2,1,0) in block (1,0,0)
-=========     Address 0x7f06cbe003dc is out of bounds
-=========     and is 205 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (3,1,0) in block (1,0,0)
-=========     Address 0x7f06cbe003e0 is out of bounds
-=========     and is 209 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (4,1,0) in block (1,0,0)
-=========     Address 0x7f06cbe003e4 is out of bounds
-=========     and is 213 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (5,1,0) in block (1,0,0)
-=========     Address 0x7f06cbe003e8 is out of bounds
-=========     and is 217 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (6,1,0) in block (1,0,0)
-=========     Address 0x7f06cbe003ec is out of bounds
-=========     and is 221 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (7,1,0) in block (1,0,0)
-=========     Address 0x7f06cbe003f0 is out of bounds
-=========     and is 225 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (8,1,0) in block (1,0,0)
-=========     Address 0x7f06cbe003f4 is out of bounds
-=========     and is 229 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (9,1,0) in block (1,0,0)
-=========     Address 0x7f06cbe003f8 is out of bounds
-=========     and is 233 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (10,1,0) in block (1,0,0)
-=========     Address 0x7f06cbe003fc is out of bounds
-=========     and is 237 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (11,1,0) in block (1,0,0)
-=========     Address 0x7f06cbe00400 is out of bounds
-=========     and is 241 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (12,1,0) in block (1,0,0)
-=========     Address 0x7f06cbe00404 is out of bounds
-=========     and is 245 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (13,1,0) in block (1,0,0)
-=========     Address 0x7f06cbe00408 is out of bounds
-=========     and is 249 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (14,1,0) in block (1,0,0)
-=========     Address 0x7f06cbe0040c is out of bounds
-=========     and is 253 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
-=========     by thread (15,1,0) in block (1,0,0)
-=========     Address 0x7f06cbe00410 is out of bounds
-=========     and is 257 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
-=========     Saved host backtrace up to driver entry point at kernel launch time
-=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
-=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
-=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
-=========         Host Frame: inference_only(int) [0x5f8e] in m3
-=========         Host Frame: main [0x60f4] in m3
-========= 
-========= Invalid __global__ read of size 4 bytes
-=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (0,0,0) in block (168,0,0)
-=========     Address 0x7f06cbe00310 is out of bounds
-=========     and is 1 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e00310 is out of bounds
+=========     and is 1 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -786,8 +18,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (1,0,0) in block (168,0,0)
-=========     Address 0x7f06cbe00314 is out of bounds
-=========     and is 5 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e00314 is out of bounds
+=========     and is 5 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -798,8 +30,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (2,0,0) in block (168,0,0)
-=========     Address 0x7f06cbe00318 is out of bounds
-=========     and is 9 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e00318 is out of bounds
+=========     and is 9 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -810,8 +42,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (3,0,0) in block (168,0,0)
-=========     Address 0x7f06cbe0031c is out of bounds
-=========     and is 13 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e0031c is out of bounds
+=========     and is 13 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -822,8 +54,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (4,0,0) in block (168,0,0)
-=========     Address 0x7f06cbe00320 is out of bounds
-=========     and is 17 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e00320 is out of bounds
+=========     and is 17 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -834,8 +66,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (5,0,0) in block (168,0,0)
-=========     Address 0x7f06cbe00324 is out of bounds
-=========     and is 21 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e00324 is out of bounds
+=========     and is 21 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -846,8 +78,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (6,0,0) in block (168,0,0)
-=========     Address 0x7f06cbe00328 is out of bounds
-=========     and is 25 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e00328 is out of bounds
+=========     and is 25 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -858,8 +90,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (7,0,0) in block (168,0,0)
-=========     Address 0x7f06cbe0032c is out of bounds
-=========     and is 29 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e0032c is out of bounds
+=========     and is 29 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -870,8 +102,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (8,0,0) in block (168,0,0)
-=========     Address 0x7f06cbe00330 is out of bounds
-=========     and is 33 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e00330 is out of bounds
+=========     and is 33 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -882,8 +114,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (9,0,0) in block (168,0,0)
-=========     Address 0x7f06cbe00334 is out of bounds
-=========     and is 37 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e00334 is out of bounds
+=========     and is 37 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -894,8 +126,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (10,0,0) in block (168,0,0)
-=========     Address 0x7f06cbe00338 is out of bounds
-=========     and is 41 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e00338 is out of bounds
+=========     and is 41 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -906,8 +138,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (11,0,0) in block (168,0,0)
-=========     Address 0x7f06cbe0033c is out of bounds
-=========     and is 45 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e0033c is out of bounds
+=========     and is 45 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -918,8 +150,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (12,0,0) in block (168,0,0)
-=========     Address 0x7f06cbe00340 is out of bounds
-=========     and is 49 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e00340 is out of bounds
+=========     and is 49 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -930,8 +162,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (13,0,0) in block (168,0,0)
-=========     Address 0x7f06cbe00344 is out of bounds
-=========     and is 53 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e00344 is out of bounds
+=========     and is 53 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -942,8 +174,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (14,0,0) in block (168,0,0)
-=========     Address 0x7f06cbe00348 is out of bounds
-=========     and is 57 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e00348 is out of bounds
+=========     and is 57 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -954,8 +186,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (15,0,0) in block (168,0,0)
-=========     Address 0x7f06cbe0034c is out of bounds
-=========     and is 61 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e0034c is out of bounds
+=========     and is 61 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -966,8 +198,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (0,1,0) in block (168,0,0)
-=========     Address 0x7f06cbe003d4 is out of bounds
-=========     and is 197 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e003d4 is out of bounds
+=========     and is 197 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -978,8 +210,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (1,1,0) in block (168,0,0)
-=========     Address 0x7f06cbe003d8 is out of bounds
-=========     and is 201 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e003d8 is out of bounds
+=========     and is 201 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -990,8 +222,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (2,1,0) in block (168,0,0)
-=========     Address 0x7f06cbe003dc is out of bounds
-=========     and is 205 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e003dc is out of bounds
+=========     and is 205 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -1002,8 +234,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (3,1,0) in block (168,0,0)
-=========     Address 0x7f06cbe003e0 is out of bounds
-=========     and is 209 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e003e0 is out of bounds
+=========     and is 209 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -1014,8 +246,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (4,1,0) in block (168,0,0)
-=========     Address 0x7f06cbe003e4 is out of bounds
-=========     and is 213 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e003e4 is out of bounds
+=========     and is 213 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -1026,8 +258,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (5,1,0) in block (168,0,0)
-=========     Address 0x7f06cbe003e8 is out of bounds
-=========     and is 217 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e003e8 is out of bounds
+=========     and is 217 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -1038,8 +270,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (6,1,0) in block (168,0,0)
-=========     Address 0x7f06cbe003ec is out of bounds
-=========     and is 221 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e003ec is out of bounds
+=========     and is 221 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -1050,8 +282,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (7,1,0) in block (168,0,0)
-=========     Address 0x7f06cbe003f0 is out of bounds
-=========     and is 225 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e003f0 is out of bounds
+=========     and is 225 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -1062,8 +294,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (8,1,0) in block (168,0,0)
-=========     Address 0x7f06cbe003f4 is out of bounds
-=========     and is 229 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e003f4 is out of bounds
+=========     and is 229 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -1074,8 +306,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (9,1,0) in block (168,0,0)
-=========     Address 0x7f06cbe003f8 is out of bounds
-=========     and is 233 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e003f8 is out of bounds
+=========     and is 233 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -1086,8 +318,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (10,1,0) in block (168,0,0)
-=========     Address 0x7f06cbe003fc is out of bounds
-=========     and is 237 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e003fc is out of bounds
+=========     and is 237 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -1098,8 +330,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (11,1,0) in block (168,0,0)
-=========     Address 0x7f06cbe00400 is out of bounds
-=========     and is 241 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e00400 is out of bounds
+=========     and is 241 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -1110,8 +342,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (12,1,0) in block (168,0,0)
-=========     Address 0x7f06cbe00404 is out of bounds
-=========     and is 245 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e00404 is out of bounds
+=========     and is 245 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -1122,8 +354,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (13,1,0) in block (168,0,0)
-=========     Address 0x7f06cbe00408 is out of bounds
-=========     and is 249 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e00408 is out of bounds
+=========     and is 249 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -1134,8 +366,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (14,1,0) in block (168,0,0)
-=========     Address 0x7f06cbe0040c is out of bounds
-=========     and is 253 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e0040c is out of bounds
+=========     and is 253 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -1146,8 +378,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (15,1,0) in block (168,0,0)
-=========     Address 0x7f06cbe00410 is out of bounds
-=========     and is 257 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e00410 is out of bounds
+=========     and is 257 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -1158,8 +390,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (0,0,0) in block (505,0,0)
-=========     Address 0x7f06cbe00310 is out of bounds
-=========     and is 1 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e00310 is out of bounds
+=========     and is 1 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -1170,8 +402,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (1,0,0) in block (505,0,0)
-=========     Address 0x7f06cbe00314 is out of bounds
-=========     and is 5 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e00314 is out of bounds
+=========     and is 5 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -1182,8 +414,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (2,0,0) in block (505,0,0)
-=========     Address 0x7f06cbe00318 is out of bounds
-=========     and is 9 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e00318 is out of bounds
+=========     and is 9 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -1194,8 +426,8 @@ Conv-GPU==
 ========= Invalid __global__ read of size 4 bytes
 =========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
 =========     by thread (3,0,0) in block (505,0,0)
-=========     Address 0x7f06cbe0031c is out of bounds
-=========     and is 13 bytes after the nearest allocation at 0x7f06cbe00000 of size 784 bytes
+=========     Address 0x7f6837e0031c is out of bounds
+=========     and is 13 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
 =========     Saved host backtrace up to driver entry point at kernel launch time
 =========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
 =========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
@@ -1203,13 +435,781 @@ Conv-GPU==
 =========         Host Frame: inference_only(int) [0x5f8e] in m3
 =========         Host Frame: main [0x60f4] in m3
 ========= 
-Layer Time: 9140.15 ms
-Op Time: 9138.64 ms
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (4,0,0) in block (505,0,0)
+=========     Address 0x7f6837e00320 is out of bounds
+=========     and is 17 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (5,0,0) in block (505,0,0)
+=========     Address 0x7f6837e00324 is out of bounds
+=========     and is 21 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (6,0,0) in block (505,0,0)
+=========     Address 0x7f6837e00328 is out of bounds
+=========     and is 25 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (7,0,0) in block (505,0,0)
+=========     Address 0x7f6837e0032c is out of bounds
+=========     and is 29 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (8,0,0) in block (505,0,0)
+=========     Address 0x7f6837e00330 is out of bounds
+=========     and is 33 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (9,0,0) in block (505,0,0)
+=========     Address 0x7f6837e00334 is out of bounds
+=========     and is 37 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (10,0,0) in block (505,0,0)
+=========     Address 0x7f6837e00338 is out of bounds
+=========     and is 41 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (11,0,0) in block (505,0,0)
+=========     Address 0x7f6837e0033c is out of bounds
+=========     and is 45 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (12,0,0) in block (505,0,0)
+=========     Address 0x7f6837e00340 is out of bounds
+=========     and is 49 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (13,0,0) in block (505,0,0)
+=========     Address 0x7f6837e00344 is out of bounds
+=========     and is 53 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (14,0,0) in block (505,0,0)
+=========     Address 0x7f6837e00348 is out of bounds
+=========     and is 57 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (15,0,0) in block (505,0,0)
+=========     Address 0x7f6837e0034c is out of bounds
+=========     and is 61 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (0,1,0) in block (505,0,0)
+=========     Address 0x7f6837e003d4 is out of bounds
+=========     and is 197 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (1,1,0) in block (505,0,0)
+=========     Address 0x7f6837e003d8 is out of bounds
+=========     and is 201 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (2,1,0) in block (505,0,0)
+=========     Address 0x7f6837e003dc is out of bounds
+=========     and is 205 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (3,1,0) in block (505,0,0)
+=========     Address 0x7f6837e003e0 is out of bounds
+=========     and is 209 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (4,1,0) in block (505,0,0)
+=========     Address 0x7f6837e003e4 is out of bounds
+=========     and is 213 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (5,1,0) in block (505,0,0)
+=========     Address 0x7f6837e003e8 is out of bounds
+=========     and is 217 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (6,1,0) in block (505,0,0)
+=========     Address 0x7f6837e003ec is out of bounds
+=========     and is 221 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (7,1,0) in block (505,0,0)
+=========     Address 0x7f6837e003f0 is out of bounds
+=========     and is 225 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (8,1,0) in block (505,0,0)
+=========     Address 0x7f6837e003f4 is out of bounds
+=========     and is 229 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (9,1,0) in block (505,0,0)
+=========     Address 0x7f6837e003f8 is out of bounds
+=========     and is 233 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (10,1,0) in block (505,0,0)
+=========     Address 0x7f6837e003fc is out of bounds
+=========     and is 237 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (11,1,0) in block (505,0,0)
+=========     Address 0x7f6837e00400 is out of bounds
+=========     and is 241 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (12,1,0) in block (505,0,0)
+=========     Address 0x7f6837e00404 is out of bounds
+=========     and is 245 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (13,1,0) in block (505,0,0)
+=========     Address 0x7f6837e00408 is out of bounds
+=========     and is 249 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (14,1,0) in block (505,0,0)
+=========     Address 0x7f6837e0040c is out of bounds
+=========     and is 253 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (15,1,0) in block (505,0,0)
+=========     Address 0x7f6837e00410 is out of bounds
+=========     and is 257 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (0,0,0) in block (336,0,0)
+=========     Address 0x7f6837e00310 is out of bounds
+=========     and is 1 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (1,0,0) in block (336,0,0)
+=========     Address 0x7f6837e00314 is out of bounds
+=========     and is 5 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (2,0,0) in block (336,0,0)
+=========     Address 0x7f6837e00318 is out of bounds
+=========     and is 9 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (3,0,0) in block (336,0,0)
+=========     Address 0x7f6837e0031c is out of bounds
+=========     and is 13 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (4,0,0) in block (336,0,0)
+=========     Address 0x7f6837e00320 is out of bounds
+=========     and is 17 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (5,0,0) in block (336,0,0)
+=========     Address 0x7f6837e00324 is out of bounds
+=========     and is 21 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (6,0,0) in block (336,0,0)
+=========     Address 0x7f6837e00328 is out of bounds
+=========     and is 25 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (7,0,0) in block (336,0,0)
+=========     Address 0x7f6837e0032c is out of bounds
+=========     and is 29 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (8,0,0) in block (336,0,0)
+=========     Address 0x7f6837e00330 is out of bounds
+=========     and is 33 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (9,0,0) in block (336,0,0)
+=========     Address 0x7f6837e00334 is out of bounds
+=========     and is 37 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (10,0,0) in block (336,0,0)
+=========     Address 0x7f6837e00338 is out of bounds
+=========     and is 41 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (11,0,0) in block (336,0,0)
+=========     Address 0x7f6837e0033c is out of bounds
+=========     and is 45 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (12,0,0) in block (336,0,0)
+=========     Address 0x7f6837e00340 is out of bounds
+=========     and is 49 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (13,0,0) in block (336,0,0)
+=========     Address 0x7f6837e00344 is out of bounds
+=========     and is 53 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (14,0,0) in block (336,0,0)
+=========     Address 0x7f6837e00348 is out of bounds
+=========     and is 57 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (15,0,0) in block (336,0,0)
+=========     Address 0x7f6837e0034c is out of bounds
+=========     and is 61 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (0,1,0) in block (336,0,0)
+=========     Address 0x7f6837e003d4 is out of bounds
+=========     and is 197 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (1,1,0) in block (336,0,0)
+=========     Address 0x7f6837e003d8 is out of bounds
+=========     and is 201 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (2,1,0) in block (336,0,0)
+=========     Address 0x7f6837e003dc is out of bounds
+=========     and is 205 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (3,1,0) in block (336,0,0)
+=========     Address 0x7f6837e003e0 is out of bounds
+=========     and is 209 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (4,1,0) in block (336,0,0)
+=========     Address 0x7f6837e003e4 is out of bounds
+=========     and is 213 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (5,1,0) in block (336,0,0)
+=========     Address 0x7f6837e003e8 is out of bounds
+=========     and is 217 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (6,1,0) in block (336,0,0)
+=========     Address 0x7f6837e003ec is out of bounds
+=========     and is 221 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (7,1,0) in block (336,0,0)
+=========     Address 0x7f6837e003f0 is out of bounds
+=========     and is 225 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (8,1,0) in block (336,0,0)
+=========     Address 0x7f6837e003f4 is out of bounds
+=========     and is 229 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (9,1,0) in block (336,0,0)
+=========     Address 0x7f6837e003f8 is out of bounds
+=========     and is 233 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (10,1,0) in block (336,0,0)
+=========     Address 0x7f6837e003fc is out of bounds
+=========     and is 237 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (11,1,0) in block (336,0,0)
+=========     Address 0x7f6837e00400 is out of bounds
+=========     and is 241 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (12,1,0) in block (336,0,0)
+=========     Address 0x7f6837e00404 is out of bounds
+=========     and is 245 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (13,1,0) in block (336,0,0)
+=========     Address 0x7f6837e00408 is out of bounds
+=========     and is 249 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (14,1,0) in block (336,0,0)
+=========     Address 0x7f6837e0040c is out of bounds
+=========     and is 253 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (15,1,0) in block (336,0,0)
+=========     Address 0x7f6837e00410 is out of bounds
+=========     and is 257 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (0,0,0) in block (337,0,0)
+=========     Address 0x7f6837e00310 is out of bounds
+=========     and is 1 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (1,0,0) in block (337,0,0)
+=========     Address 0x7f6837e00314 is out of bounds
+=========     and is 5 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (2,0,0) in block (337,0,0)
+=========     Address 0x7f6837e00318 is out of bounds
+=========     and is 9 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at matmul_conv_fused(const float *, const float *, float *, int, int, int, int, int, int)+0x4f0 in m3-forward.cu:48
+=========     by thread (3,0,0) in block (337,0,0)
+=========     Address 0x7f6837e0031c is out of bounds
+=========     and is 13 bytes after the nearest allocation at 0x7f6837e00000 of size 784 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame: GPUInterface::conv_forward_gpu(float*, float const*, float const*, int, int, int, int, int, int) [0x7756] in m3
+=========         Host Frame: Conv_Custom::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0x3219e] in m3
+=========         Host Frame: Network::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&) [0xb8b6] in m3
+=========         Host Frame: inference_only(int) [0x5f8e] in m3
+=========         Host Frame: main [0x60f4] in m3
+========= 
+Layer Time: 9193.47 ms
+Op Time: 9192.06 ms
 Conv-GPU==
-Layer Time: 1.77517 ms
-Op Time: 0.327143 ms
+Layer Time: 1.80365 ms
+Op Time: 0.319278 ms
 
 Test Accuracy: 0.08
 
-========= ERROR SUMMARY: 38969 errors
-========= ERROR SUMMARY: 38869 errors were not printed. Use --print-limit option to adjust the number of printed errors
+========= ERROR SUMMARY: 36569 errors
+========= ERROR SUMMARY: 36469 errors were not printed. Use --print-limit option to adjust the number of printed errors
