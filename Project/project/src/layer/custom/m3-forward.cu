@@ -1,164 +1,150 @@
-#include <cmath>
 #include <iostream>
 #include <mma.h>
+#include <cmath>
 #include "gpu-new-forward.h"
 
 using namespace nvcuda;
 
-#define WMMA_M 16
-#define WMMA_N 16
-#define WMMA_K 16
-#define TILE_WIDTH 16
+#define TM 16
+#define TN 16
+#define TK 16
+#define BLOCK_T 16
 
-__global__ void matmul_conv_fused(const float *mask, const float *input, float *output,
-                                  int Batch, int Map_out, int Channel, int Height, int Width, int K)
+__global__ void conv_wmma_kernel(const float *filter, const float *data, float *result,
+                                 int B, int M, int C, int H, int W, int K)
 {
-    const int Height_out = Height - K + 1;
-    const int Width_out = Width - K + 1;
-    const int H_unroll = Channel * K * K;
-    const int W_unroll = Batch * Height_out * Width_out;
+    const int Hout = H - K + 1;
+    const int Wout = W - K + 1;
 
-    __shared__ __half a_tile[WMMA_M * WMMA_N];
-    __shared__ __half b_tile[WMMA_M * WMMA_N];
-    __shared__ float C_tile[WMMA_M * WMMA_N];
+    const int UnrollH = C * K * K;
+    const int UnrollW = B * Hout * Wout;
+
+    __shared__ __half Asub[TM * TN];
+    __shared__ __half Bsub[TM * TN];
+    __shared__ float Csub[TM * TN];
 
     int tx = threadIdx.x;
     int ty = threadIdx.y;
 
-    int row = blockIdx.y * TILE_WIDTH + ty;
-    int col = blockIdx.x * TILE_WIDTH + tx;
+    int global_row = blockIdx.y * BLOCK_T + ty;
+    int global_col = blockIdx.x * BLOCK_T + tx;
 
-    wmma::fragment<wmma::matrix_a, WMMA_M, WMMA_N, WMMA_K, __half, wmma::row_major> a_frag;
-    wmma::fragment<wmma::matrix_b, WMMA_M, WMMA_N, WMMA_K, __half, wmma::row_major> b_frag;
-    wmma::fragment<wmma::accumulator, WMMA_M, WMMA_N, WMMA_K, float> acc_frag;
-    wmma::fill_fragment(acc_frag, 0.0f);
+    wmma::fragment<wmma::matrix_a, TM, TN, TK, __half, wmma::row_major> A_frag;
+    wmma::fragment<wmma::matrix_b, TM, TN, TK, __half, wmma::row_major> B_frag;
+    wmma::fragment<wmma::accumulator, TM, TN, TK, float> Acc;
+    wmma::fill_fragment(Acc, 0.0f);
 
-    __half filter = 0.0f;
+    __half validMask = __float2half(0.0f);
 
-    for (int t = 0; t < (H_unroll - 1) / TILE_WIDTH + 1; ++t) {
-        int tiled_k = t * TILE_WIDTH + threadIdx.x;
+    for (int t = 0; t < (UnrollH + BLOCK_T - 1) / BLOCK_T; t++) {
 
-        int ac = tiled_k / (K * K);
-        int ap = (tiled_k % (K * K)) / K;
-        int aq = (tiled_k % (K * K)) % K;
+        int k_idx = t * BLOCK_T + tx;
+
+        int c_idx = k_idx / (K * K);
+        int p_idx = (k_idx % (K * K)) / K;
+        int q_idx = (k_idx % (K * K)) % K;
 
         #pragma unroll
-        for (int i = 0; i < TILE_WIDTH; i += 2) {
-            filter = (row + i) < Map_out && tiled_k < H_unroll;
-            a_tile[(threadIdx.y + i) * TILE_WIDTH + threadIdx.x] = __float2half(mask[(row + i) * (Channel * K * K) + ac * (K * K) + ap * K + aq]) * filter;
+        for (int rr = 0; rr < BLOCK_T; rr += 2) {
+            int r = global_row + rr;
+            validMask = (r < M && k_idx < UnrollH) ? __float2half(1.0f) : __float2half(0.0f);
+
+            Asub[(ty + rr) * BLOCK_T + tx] =
+                __float2half(filter[r * (C*K*K) + c_idx * (K*K) + p_idx * K + q_idx]) * validMask;
         }
 
-        int b = col / (Height_out * Width_out);
-        int hw = col % (Height_out * Width_out);
-        int h_out = hw / Width_out;
-        int w_out = hw % Width_out;
+        int batch_id = global_col / (Hout * Wout);
+        int hw = global_col % (Hout * Wout);
+        int oh = hw / Wout;
+        int ow = hw % Wout;
 
         #pragma unroll
-        for (int i = 0; i < TILE_WIDTH; i += 2) {
-            int tiled_row = t * TILE_WIDTH + threadIdx.y + i;
+        for (int rr = 0; rr < BLOCK_T; rr += 2) {
 
-            int c = tiled_row / (K * K);
-            int p = (tiled_row % (K * K)) / K;
-            int q = (tiled_row % (K * K)) % K;
+            int row_idx = t * BLOCK_T + ty + rr;
+            int c2 = row_idx / (K * K);
+            int p2 = (row_idx % (K * K)) / K;
+            int q2 = (row_idx % (K * K)) % K;
 
-            int h = h_out + p;
-            int w = w_out + q;
+            int ih = oh + p2;
+            int iw = ow + q2;
 
-            filter = col < W_unroll && tiled_row < H_unroll;
+            validMask = (global_col < UnrollW && row_idx < UnrollH) ? __float2half(1.0f) : __float2half(0.0f);
 
-            b_tile[(threadIdx.y + i) * TILE_WIDTH + threadIdx.x] =
-                __float2half(input[b * Channel * Height * Width + c * Height * Width + h * Width + w]) * filter;
+            Bsub[(ty + rr) * BLOCK_T + tx] =
+                __float2half(data[batch_id * (C*H*W) + c2 * (H*W) + ih * W + iw]) * validMask;
         }
 
         __syncthreads();
 
-        wmma::load_matrix_sync(a_frag, a_tile, WMMA_M);
-        wmma::load_matrix_sync(b_frag, b_tile, WMMA_N);
-
-        wmma::mma_sync(acc_frag, a_frag, b_frag, acc_frag);
+        wmma::load_matrix_sync(A_frag, Asub, TM);
+        wmma::load_matrix_sync(B_frag, Bsub, TN);
+        wmma::mma_sync(Acc, A_frag, B_frag, Acc);
 
         __syncthreads();
     }
 
-    wmma::store_matrix_sync(C_tile, acc_frag, WMMA_N, wmma::mem_row_major);
+    wmma::store_matrix_sync(Csub, Acc, TM, wmma::mem_row_major);
 
     __syncthreads();
 
     #pragma unroll
-    for (int i = 0; i < TILE_WIDTH; i += 2) {
-        if ((row + i) < Map_out && col < W_unroll) {
-            int b = col / (Height_out * Width_out);
-            int hw = col % (Height_out * Width_out);
-            int h = hw / Width_out;
-            int w = hw % Width_out;
-    
-            output[b * Map_out * Height_out * Width_out + (row + i) * Height_out * Width_out + h * Width_out + w] = C_tile[(threadIdx.y + i) * WMMA_N + threadIdx.x];
+    for (int rr = 0; rr < BLOCK_T; rr += 2) {
+        int r = global_row + rr;
+        if (r < M && global_col < UnrollW) {
+            int b_id = global_col / (Hout * Wout);
+            int hw = global_col % (Hout * Wout);
+            int oh = hw / Wout;
+            int ow = hw % Wout;
+
+            result[b_id * M * Hout * Wout + r * Hout * Wout + oh * Wout + ow] =
+                Csub[(ty + rr) * TM + tx];
         }
     }
 }
 
-__host__ void GPUInterface::conv_forward_gpu_prolog(const float *host_output, const float *host_input, const float *host_mask, float **device_output_ptr, float **device_input_ptr, float **device_mask_ptr, const int Batch, const int Map_out, const int Channel, const int Height, const int Width, const int K)
+__host__ void GPUInterface::conv_forward_gpu_prolog(const float *hostOut, const float *hostIn,
+                                                    const float *hostF, float **devOut,
+                                                    float **devIn, float **devF,
+                                                    int B, int M, int C, int H, int W, int K)
 {
-    size_t input_size = Batch * Channel * Height * Width * sizeof(float);
-    size_t mask_size = Map_out * Channel * K * K * sizeof(float);
-    size_t output_size = Batch * Map_out * (Height - K + 1) * (Width - K + 1) * sizeof(float);
+    size_t in_size = B * C * H * W * sizeof(float);
+    size_t f_size = M * C * K * K * sizeof(float);
+    size_t out_size = B * M * (H-K+1) * (W-K+1) * sizeof(float);
 
-    cudaMalloc((void**)device_input_ptr, input_size);
-    cudaMalloc((void**)device_mask_ptr, mask_size);
-    cudaMalloc((void**)device_output_ptr, output_size);
+    cudaMalloc((void**)devIn, in_size);
+    cudaMalloc((void**)devF, f_size);
+    cudaMalloc((void**)devOut, out_size);
 
-    cudaMemcpy(*device_input_ptr, host_input, input_size, cudaMemcpyHostToDevice);
-    cudaMemcpy(*device_mask_ptr, host_mask, mask_size, cudaMemcpyHostToDevice);
+    cudaMemcpy(*devIn, hostIn, in_size, cudaMemcpyHostToDevice);
+    cudaMemcpy(*devF, hostF, f_size, cudaMemcpyHostToDevice);
 }
 
-
-__host__ void GPUInterface::conv_forward_gpu(float *device_output, const float *device_input, const float *device_mask, const int Batch, const int Map_out, const int Channel, const int Height, const int Width, const int K)
+__host__ void GPUInterface::conv_forward_gpu(float *devOut, const float *devIn,
+                                             const float *devF, int B, int M, int C,
+                                             int H, int W, int K)
 {
-    const int Height_out = Height - K + 1;
-    const int Width_out = Width - K + 1;
-    const int W_unroll = Batch * Height_out * Width_out;
+    int Hout = H - K + 1;
+    int Wout = W - K + 1;
 
-    dim3 dimBlock(TILE_WIDTH, 2, 1);
-    dim3 dimGrid((W_unroll - 1) / TILE_WIDTH + 1,
-                 (Map_out - 1) / TILE_WIDTH + 1, 1);
+    int W_unroll = B * Hout * Wout;
 
-    matmul_conv_fused<<<dimGrid, dimBlock>>>(device_mask, device_input, device_output,
-                                             Batch, Map_out, Channel, Height, Width, K);
+    dim3 block(BLOCK_T, 2, 1);
+    dim3 grid((W_unroll + BLOCK_T - 1) / BLOCK_T,
+              (M + BLOCK_T - 1) / BLOCK_T, 1);
+
+    conv_wmma_kernel<<<grid, block>>>(devF, devIn, devOut,
+                                      B, M, C, H, W, K);
 }
 
-
-__host__ void GPUInterface::conv_forward_gpu_epilog(float *host_output, float *device_output, float *device_input, float *device_mask, const int Batch, const int Map_out, const int Channel, const int Height, const int Width, const int K)
+__host__ void GPUInterface::conv_forward_gpu_epilog(float *hostOut, float *devOut,
+                                                    float *devIn, float *devF,
+                                                    int B, int M, int C, int H, int W, int K)
 {
-    const int Height_out = Height - K + 1;
-    const int Width_out = Width - K + 1;
-    size_t output_size = Batch * Map_out * Height_out * Width_out * sizeof(float);
+    size_t out_size = B * M * (H-K+1) * (W-K+1) * sizeof(float);
+    cudaMemcpy(hostOut, devOut, out_size, cudaMemcpyDeviceToHost);
 
-    cudaMemcpy(host_output, device_output, output_size, cudaMemcpyDeviceToHost);
-
-    cudaFree(device_output);
-    cudaFree(device_input);
-    cudaFree(device_mask);
-}
-
-
-__host__ void GPUInterface::get_device_properties()
-{
-    int deviceCount;
-    cudaGetDeviceCount(&deviceCount);
-
-    for(int dev = 0; dev < deviceCount; dev++)
-    {
-        cudaDeviceProp deviceProp;
-        cudaGetDeviceProperties(&deviceProp, dev);
-
-        std::cout<<"Device "<<dev<<" name: "<<deviceProp.name<<std::endl;
-        std::cout<<"Computational capabilities: "<<deviceProp.major<<"."<<deviceProp.minor<<std::endl;
-        std::cout<<"Max Global memory size: "<<deviceProp.totalGlobalMem<<std::endl;
-        std::cout<<"Max Constant memory size: "<<deviceProp.totalConstMem<<std::endl;
-        std::cout<<"Max Shared memory size per block: "<<deviceProp.sharedMemPerBlock<<std::endl;
-        std::cout<<"Max threads per block: "<<deviceProp.maxThreadsPerBlock<<std::endl;
-        std::cout<<"Max block dimensions: "<<deviceProp.maxThreadsDim[0]<<" x, "<<deviceProp.maxThreadsDim[1]<<" y, "<<deviceProp.maxThreadsDim[2]<<" z"<<std::endl;
-        std::cout<<"Max grid dimensions: "<<deviceProp.maxGridSize[0]<<" x, "<<deviceProp.maxGridSize[1]<<" y, "<<deviceProp.maxGridSize[2]<<" z"<<std::endl;
-        std::cout<<"Warp Size: "<<deviceProp.warpSize<<std::endl;
-    }
+    cudaFree(devOut);
+    cudaFree(devIn);
+    cudaFree(devF);
 }
