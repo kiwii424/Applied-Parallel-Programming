@@ -1,6 +1,7 @@
 # Applied-Parallel-Programming
 
 ECE 408 / CS 483 / CSE 408 (fa25) by UIUC, IL, USA
+
 Instructor: Volodymyr Kindratenko
 
 CUDA / GPU programming portfolio from UIUC's Applied Parallel Programming course, featuring profiling-driven implementations of convolution, dense and sparse linear algebra, reduction, scan, and CNN inference.
